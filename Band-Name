@@ -1,4 +1,5 @@
 # Starting variables.
+import time
 
 first_name_len = 0
 last_name_len = 0
@@ -44,9 +45,21 @@ if city_name_len > 20:
 
 # Joking city output
 print("...")
+time.sleep(1)
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
+print("Alright give me a minute " + first_name + ", I wasn't programmed to figure a band name for someone from " + city_name + " but let me see what I can do")
+time.sleep(1)
+print(".")
+time.sleep(1)
+print(".")
+print("..." + city_name + ", seriously...")
+time.sleep(1)
+print(".")
+time.sleep(1)
+print("..")
+time.sleep(1)
 print("...")
-print("Alright give me a minute. I wasn't programmed to figure a band name for someone from " + city_name + " but let me see what I can do")
+time.sleep(1)
 
 # Band name generation.
 first_name_band_name = first_name_tuple[first_name_len]
@@ -72,9 +85,12 @@ if city_name_len + 1 > 20:
 else:
     city_name_len = city_name_len + 1
 
+# Second band name generation
 first_name_band_name_two = first_name_tuple[first_name_len]
 last_name_band_name_two = last_name_tuple[last_name_len]
 city_name_band_name_two = city_name_tuple[city_name_len]
 
+time.sleep(2)
+
 # Second band name print
-print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
+print("Or it could also be: " + first_name_band_name_two + " " + last
