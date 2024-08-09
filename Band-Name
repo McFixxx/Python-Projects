@@ -47,7 +47,7 @@ if city_name_len > 20:
 print("...")
 time.sleep(1)
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
-print("Alright give me a minute " + first_name + ", let me see what I can do")
+print("Alright give me a minute " + first_name + ", let me see what I can do.")
 time.sleep(1)
 print(".")
 time.sleep(1)
