@@ -120,3 +120,6 @@ time.sleep(2)
 
 # Second band name print
 print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
+
+# Input function to keep exe window from closing immediately.
+input()
