@@ -42,21 +42,24 @@ city_name_len = len(city_name)
 if city_name_len > 20:
     city_name_len = 18
 
+# Joking city output
 print("...")
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
 print("...")
 print("Alright give me a minute. I wasn't programmed to figure a band name for someone from " + city_name + " but let me see what I can do")
 
+# Band name generation.
 first_name_band_name = first_name_tuple[first_name_len]
 last_name_band_name = last_name_tuple[last_name_len]
 city_name_band_name = city_name_tuple[city_name_len]
 
+# First band name print.
 print("Your band name could be: " + first_name_band_name + " " + last_name_band_name + " " + city_name_band_name)
 
 # Second band name generation.
-first_name_band_name_two = first_name_tuple[int(first_name_len / 2)]
-last_name_band_name_two = last_name_tuple[int(last_name_len / 2)]
-city_name_band_name_two = city_name_tuple[int(city_name_len / 2)]
+first_name_band_name_two = first_name_tuple[int(first_name_len + 1)]
+last_name_band_name_two = last_name_tuple[int(last_name_len + 2)]
+city_name_band_name_two = city_name_tuple[int(city_name_len + 1)]
 
 # Second band name print
 print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
