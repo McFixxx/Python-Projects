@@ -56,10 +56,25 @@ city_name_band_name = city_name_tuple[city_name_len]
 # First band name print.
 print("Your band name could be: " + first_name_band_name + " " + last_name_band_name + " " + city_name_band_name)
 
-# Second band name generation.
-first_name_band_name_two = first_name_tuple[int(first_name_len + 1)]
-last_name_band_name_two = last_name_tuple[int(last_name_len + 2)]
-city_name_band_name_two = city_name_tuple[int(city_name_len + 1)]
+# Name length changes
+if first_name_len + 1 > 15:
+    first_name_len = first_name_len - 1
+else:
+    first_name_len = first_name_len + 1
+
+if last_name_len + 1 > 16:
+    last_name_len = last_name_len - 1
+else:
+    last_name_len = last_name_len + 1
+
+if city_name_len + 1 > 20:
+    city_name_len = city_name_len - 1
+else:
+    city_name_len = city_name_len + 1
+
+first_name_band_name_two = first_name_tuple[first_name_len]
+last_name_band_name_two = last_name_tuple[last_name_len]
+city_name_band_name_two = city_name_tuple[city_name_len]
 
 # Second band name print
 print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
