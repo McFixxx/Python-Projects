@@ -19,8 +19,8 @@ first_name_len = len(first_name)
 
 # First name loop.
 while first_name_len > 15:
-    print("C'mon. If you are reading this, your first name isn't that long. This isn't kosopolandslakistan. What is your first name REALLY?\n")
-    first_name = input("What is your first name?\n")
+    print("C'mon. If you are reading this, your first name isn't that long. This isn't kosopolandslakistan.\n")
+    first_name = input("What is your first name REALLY?\n")
     first_name_len = len(first_name)
     if first_name_len <= 15:
         continue
@@ -31,8 +31,8 @@ last_name_len = len(last_name)
 
 # Last name loop
 while last_name_len > 16:
-    print("Really. Are we positive the cat didn't walk across your keyboard?\n")
-    last_name = input("What is your last name?\n")
+    print("Seriously? Are we positive the cat didn't walk across your keyboard?\n")
+    last_name = input("What is your ACTUAL last name?\n")
     last_name_len = len(last_name)
     if last_name_len <= 16:
         continue
@@ -47,7 +47,7 @@ if city_name_len > 20:
 print("...")
 time.sleep(1)
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
-print("Alright give me a minute " + first_name + ", I wasn't programmed to figure a band name for someone from " + city_name + " but let me see what I can do")
+print("Alright give me a minute " + first_name + ", let me see what I can do")
 time.sleep(1)
 print(".")
 time.sleep(1)
@@ -93,4 +93,4 @@ city_name_band_name_two = city_name_tuple[city_name_len]
 time.sleep(2)
 
 # Second band name print
-print("Or it could also be: " + first_name_band_name_two + " " + last
+print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
