@@ -6,9 +6,9 @@ last_name_len = 0
 city_name_len = 0
 
 #Band name components
-first_name_tuple = ("You didn't put a first name in,", "Stroke", "Term", "Mix", "Announce", "Praise", "Snap", "Tuck", "Fire", "Bounce", "Contain", "Relate", "Consider", "Invest", "Arm", "Recover")
-last_name_tuple = ("You didn't put a last name in, that's on you.", "Yellow", "Mere", "Trashy", "Tan", "Tearful", "Smiling", "Imported", "Lyrical", "Finicky", "Chemical", "Redundant", "Sharp", "Wooden", "Fierce", "Somber", "Smooth")
-city_name_tuple = ("No city name? Really?", "Device", "Garbage", "Analysis", "Audience", "Racoon", "Emphasis", "Maintenance", "Politics", "Obituary", "Space Marine", "Cousins", "Resolutions", "Hearts", "Tensions", "Titans", "Maidens", "Slayers", "Carcass", "Blasphemy", "Summoning")
+first_name_tuple = ("You didn't put a first name in,", "The", "Zombie", "Green", "Jumping", "Death", "Snapping", "Twilight", "Militant", "Laughing", "Guilty", "Dead", "Led", "Ugly", "Everything", "Manics")
+last_name_tuple = ("You didn't put a last name in, that's on you.", "Aboriginal", "Crisis", "Elvis", "Rocking", "Tearful", "Despot", "Imported", "Smashing", "Finicky", "Chemical", "Redundant", "Sharp", "Torture", "Fierce", "Somber", "Magpie")
+city_name_tuple = ("No city name? Really?", "Device", "Garbage", "Analysis", "Roses", "Racoon", "Head", "Maintenance", "Machine", "Obituary", "Space Marine", "Cousins", "Resolutions", "Hearts", "Tensions", "Titans", "Maidens", "Slayers", "Carcass", "Blasphemy", "Summoning")
 
 # Starting prompt.
 print("Welcome to the improved band name generator. Let's see what a band name might be!")
@@ -47,7 +47,7 @@ if city_name_len > 20:
 print("...")
 time.sleep(1)
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
-print("Alright give me a minute " + first_name + ", let me see what I can do.")
+print("Alright give me a minute " + first_name + ", let me see what I can do")
 time.sleep(1)
 print(".")
 time.sleep(1)
