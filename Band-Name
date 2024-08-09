@@ -6,9 +6,9 @@ last_name_len = 0
 city_name_len = 0
 
 #Band name components
-first_name_tuple = ("You didn't put a first name in,", "The", "Zombie", "Green", "Jumping", "Death", "Snapping", "Twilight", "Militant", "Laughing", "Guilty", "Dead", "Led", "Ugly", "Everything", "Manics")
-last_name_tuple = ("You didn't put a last name in, that's on you.", "Aboriginal", "Crisis", "Elvis", "Rocking", "Tearful", "Despot", "Imported", "Smashing", "Finicky", "Chemical", "Redundant", "Sharp", "Torture", "Fierce", "Somber", "Magpie")
-city_name_tuple = ("No city name? Really?", "Device", "Garbage", "Analysis", "Roses", "Racoon", "Head", "Maintenance", "Machine", "Obituary", "Space Marine", "Cousins", "Resolutions", "Hearts", "Tensions", "Titans", "Maidens", "Slayers", "Carcass", "Blasphemy", "Summoning")
+first_name_tuple = ("Zero placeholder", "The", "Zombie", "Green", "Jumping", "Death", "Snapping", "Twilight", "Militant", "Laughing", "Guilty", "Dead", "Led", "Ugly", "Everything", "Manics")
+last_name_tuple = ("Zero placeholder", "Aboriginal", "Crisis", "Elvis", "Rocking", "Tearful", "Despot", "Imported", "Smashing", "Finicky", "Chemical", "Redundant", "Sharp", "Torture", "Fierce", "Somber", "Magpie")
+city_name_tuple = ("Zero placeholder", "Device", "Garbage", "Analysis", "Roses", "Racoon", "Head", "Maintenance", "Machine", "Obituary", "Space Marine", "Cousins", "Resolutions", "Hearts", "Tensions", "Titans", "Maidens", "Slayers", "Carcass", "Blasphemy", "Summoning")
 
 # Starting prompt.
 print("Welcome to the improved band name generator. Let's see what a band name might be!")
