@@ -1,0 +1,54 @@
+# Starting variables.
+
+first_name_len = 0
+last_name_len = 0
+city_name_len = 0
+
+#Band name components
+first_name_tuple = ("You didn't put a first name in,", "Stroke", "Term", "Mix", "Announce", "Praise", "Snap", "Tuck", "Fire", "Bounce", "Contain", "Relate", "Consider", "Invest", "Arm", "Recover")
+last_name_tuple = ("You didn't put a last name in, that's on you.", "Yellow", "Mere", "Trashy", "Tan", "Tearful", "Smiling", "Imported", "Lyrical", "Finicky", "Chemical", "Redundant", "Sharp", "Wooden", "Fierce", "Somber", "Smooth")
+city_name_tuple = ("No city name? Really?", "Device", "Garbage", "Analysis", "Audience", "Racoon", "Emphasis", "Maintenance", "Politics", "Obituary", "Space Marine", "Cousins", "Resolutions", "Hearts", "Tensions", "Titans", "Maidens", "Slayers", "Carcass", "Blasphemy", "Summoning")
+
+# Starting prompt.
+print("Welcome to the improved band name generator. Let's see what a band name might be!")
+
+# First name prompt.
+first_name = input("What is your first name?\n")
+first_name_len = len(first_name)
+
+# First name loop.
+while first_name_len > 15:
+    print("C'mon. If you are reading this, your first name isn't that long. This isn't kosopolandslakistan. What is your first name REALLY?\n")
+    first_name = input("What is your first name?\n")
+    first_name_len = len(first_name)
+    if first_name_len <= 15:
+        continue
+
+#Last name prompt.
+last_name = input("What is your last name?\n")
+last_name_len = len(last_name)
+
+# Last name loop
+while last_name_len > 16:
+    print("Really. Are we positive the cat didn't walk across your keyboard?\n")
+    last_name = input("What is your last name?\n")
+    last_name_len = len(last_name)
+    if last_name_len <= 16:
+        continue
+
+#City input
+city_name = input("What city are you from?\n")
+city_name_len = len(city_name)
+if city_name_len > 20:
+    city_name_len = 18
+
+print("...")
+print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
+print("...")
+print("Alright give me a minute. I wasn't programmed to figure a band name for someone from " + city_name + " but let me see what I can do")
+
+first_name_band_name = first_name_tuple[first_name_len]
+last_name_band_name = last_name_tuple[last_name_len]
+city_name_band_name = city_name_tuple[city_name_len]
+
+print("Your band name could be: " + first_name_band_name + " " + last_name_band_name + " " + city_name_band_name)
