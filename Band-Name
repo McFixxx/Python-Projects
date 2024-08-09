@@ -52,3 +52,11 @@ last_name_band_name = last_name_tuple[last_name_len]
 city_name_band_name = city_name_tuple[city_name_len]
 
 print("Your band name could be: " + first_name_band_name + " " + last_name_band_name + " " + city_name_band_name)
+
+# Second band name generation.
+first_name_band_name_two = first_name_tuple[int(first_name_len / 2)]
+last_name_band_name_two = last_name_tuple[int(last_name_len / 2)]
+city_name_band_name_two = city_name_tuple[int(city_name_len / 2)]
+
+# Second band name print
+print("Or it could also be: " + first_name_band_name_two + " " + last_name_band_name_two + " " + city_name_band_name_two)
