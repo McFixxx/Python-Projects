@@ -17,6 +17,15 @@ print("Welcome to the improved band name generator. Let's see what a band name m
 first_name = input("What is your first name?\n")
 first_name_len = len(first_name)
 
+
+# First name 0 loop.
+while first_name_len == 0:
+    print("Seriously, can you just put your name in for me?\n")
+    first_name = input("What is your first name REALLY?\n")
+    first_name_len = len(first_name)
+    if first_name_len != 0:
+        continue
+
 # First name loop.
 while first_name_len > 15:
     print("C'mon. If you are reading this, your first name isn't that long. This isn't kosopolandslakistan.\n")
@@ -24,12 +33,19 @@ while first_name_len > 15:
     first_name_len = len(first_name)
     if first_name_len <= 15:
         continue
-
-#Last name prompt.
+# Last name prompt.
 last_name = input("What is your last name?\n")
 last_name_len = len(last_name)
 
-# Last name loop
+# Last name 0 loop.
+while last_name_len == 0:
+    print("Seriously, can you just put your last name in for me?\n")
+    last_name = input("What is your actual last name, for realsies?\n")
+    last_name_len = len(last_name)
+    if last_name_len != 0:
+        continue
+
+# Last name loop.
 while last_name_len > 16:
     print("Seriously? Are we positive the cat didn't walk across your keyboard?\n")
     last_name = input("What is your ACTUAL last name?\n")
@@ -37,9 +53,19 @@ while last_name_len > 16:
     if last_name_len <= 16:
         continue
 
-#City input
+# City name prompt.
 city_name = input("What city are you from?\n")
 city_name_len = len(city_name)
+
+# 0 loop to ensure there is a city name entered.
+while city_name_len == 0:
+    print("Are you really embarrassed or something?\n")
+    city_name = input("What city are you actually from?\n")
+    city_name_len = len(city_name)
+    if city_name_len != 0:
+        continue
+
+# Long city name adjustment.
 if city_name_len > 20:
     city_name_len = 18
 
@@ -47,7 +73,7 @@ if city_name_len > 20:
 print("...")
 time.sleep(1)
 print("Wow. Seriously? You are from " + city_name + " and you want to start a band? I guess polka might make a comeback. Or something I guess.")
-print("Alright give me a minute " + first_name + ", let me see what I can do")
+print("Alright give me a minute " + first_name + ", let me see what I can do.")
 time.sleep(1)
 print(".")
 time.sleep(1)
