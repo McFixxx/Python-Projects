@@ -1,7 +1,4 @@
 import random
-human_choice = 0
-human_output = 0
-computer_output = 0
 
 # ascii art
 rock = '''
@@ -34,7 +31,10 @@ Scissors
 ---.__(___)
 '''
 
-computer_choice = random.randint(1, 3)
+game_images = [rock, paper, scissors]
+
+# Computer choice
+computer_choice = random.randint(0, 2)
 
 # Human game inputs
 print('Let\'s play a game of "Rock, Paper, Scissors')
@@ -42,66 +42,28 @@ human_input = input("Choose Rock, Paper, or Scissors:\n").lower()
 
 # Human interaction changeover
 if human_input == "rock":
-    human_choice = 1
+    human_choice = 0
 elif human_input == "paper":
-    human_choice = 2
+    human_choice = 1
 elif human_input == "scissors":
-    human_choice = 3
+    human_choice = 2
 else:
-    human_choice = random.randint(1, 3)
+    human_choice = random.randint(0, 2)
     print("You didn't make a valid choice, I guess I will choose for you.")
 
-# I don't know if this is necessary.
-if human_choice == 1:
-    human_output = rock
-if human_choice == 2:
-    human_output = paper
-if human_choice == 3:
-    human_output = scissors
+# Game mechanics
+if human_choice == 0 and computer_choice == 2:
+    print("You win!!")
+elif computer_choice == 0 and human_choice == 2:
+    print("You lose.")
+elif computer_choice > human_choice:
+    print("You lose")
+elif human_choice > computer_choice:
+    print("You win!!")
+elif human_choice == computer_choice:
+    print("It's a draw.")
 
-if computer_choice == 1:
-    computer_output = rock
-if computer_choice == 2:
-    computer_output = paper
-if computer_choice == 3:
-    computer_output = scissors
-
-# Win/Lose/Draw/printouts
-win = "You win!\n"
-lose = "You lose.\n"
-draw = f"You both chose {human_input}, so it's a draw.\n"
-
-# Game mechanic portion
-if human_choice == 1:
-    if computer_choice == 2:
-        print(lose)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-    if computer_choice == 3:
-        print(win)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-if human_choice == 2:
-    if computer_choice == 1:
-        print(win)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-    if computer_choice == 3:
-        print(lose)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-if human_choice == 3:
-    if computer_choice == 1:
-        print(lose)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-    if computer_choice == 2:
-        print(win)
-        print(f"You chose:\n{human_output}")
-        print(f"The computer chose:\n{computer_output}")
-
-# Draw
-if human_choice == computer_choice:
-    print(draw)
-    print(f"You chose:\n{human_output}")
-    print(f"The computer chose:\n{computer_output}")
+print(f"You chose:")
+print(game_images[human_choice])
+print("The computer chose:")
+print(game_images[computer_choice])
